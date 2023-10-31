@@ -11,46 +11,21 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
-    <script
-      src="https://kit.fontawesome.com/69864c25db.js"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://unpkg.com/sharect@2.0.0/dist/sharect.js"></script>
     <title>Meandux - Johann Flores</title>
   </head>
   <body>
-    <div class="container">
-      <!-- Navigation Bar-->
-      <!-- <nav class="top-nav">
-        <a href="index.html" class="back-btn">Back</a>
-        <button class="share-link">Share Project</button>
-      </nav> -->
-      <!-- End Navigation Bar-->
-      <div class="card">
-        <!-- Icon Bar with actual links and icons -->
+    <main class="container">
+      <header class="card">
         <div class="icon-bar">
-          <a
-            href="index.html"
-            class="icon-link"
-            role="link"
-            aria-label="Go to home page"
-          >
-            <img src="img/icons/home_icon.svg" alt="Go to home page" />
+          <a href="index.html" class="icon-link">
+            <img src="img/icons/home_icon.svg" alt="Home icon" />
           </a>
-          <a
-            href="process.html"
-            class="icon-link"
-            role="link"
-            aria-label="View our process"
-          >
-            <img src="img/icons/process_icon.svg" alt="View our process" />
+          <a href="process.html" class="icon-link">
+            <img src="img/icons/process_icon.svg" alt="Process icon" />
           </a>
-          <a
-            href="mailto:dgtol@me.com"
-            class="icon-link"
-            role="link"
-            aria-label="Open mail to message Johann Flores"
-          >
-            <img src="img/icons/mail_icon.svg" alt="Open mail" />
+          <a href="mailto:dgtol@me.com" class="icon-link">
+            <img src="img/icons/mail_icon.svg" alt="Email icon" />
           </a>
         </div>
         <h1>About Me</h1>
@@ -72,27 +47,38 @@
         </p>
 
         <div class="social-icons">
-          <a href="#" class="social-icon-links"
-            ><img src="img/icons/social/medium.svg" alt="medium icon"
-          /></a>
-          <a href="#" class="social-icon-links"
-            ><img src="img/icons/social/instagram.svg" alt="instagram icon"
-          /></a>
+          <a
+            href="https://medium.com/@dgtol"
+            class="social-icon-links"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src="img/icons/social/medium.svg" alt="medium icon" />
+          </a>
+
+          <a
+            href="https://www.instagram.com/hann_blumen/"
+            class="social-icon-links"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src="img/icons/social/instagram.svg" alt="instagram icon" />
+          </a>
         </div>
-      </div>
+      </header>
 
       <!-- Profile Picture Card-->
-      <div class="card">
+      <section class="card">
         <div class="card-img">
           <img
             src="img/johann.svg"
             alt="Picture of Johann Flores looking dope."
           />
         </div>
-      </div>
+      </section>
       <!-- End Of Picture Card-->
 
-      <div class="card">
+      <section class="card">
         <h1>Education</h1>
         <p>
           At age 17, fresh out of high school, I decided to study abroad, return
@@ -112,16 +98,16 @@
           experience, I was an ideal candidate and ultimately transitioned to
           User Experience.
         </p>
-      </div>
+      </section>
 
-      <div class="card">
+      <section class="card">
         <!-- School One-->
         <!-- Title and Logo Container -->
         <div class="card-header">
-          <h4 id="card-title">Graphic Design</h4>
+          <h4>Columbia College Chicago</h4>
           <img
             src="img/company_logos/columbia.svg"
-            alt="Hyliion Logo"
+            alt="Columbia College Logo"
             class="company-logo"
           />
         </div>
@@ -131,16 +117,17 @@
         >
         <!-- Tags Container -->
         <div class="tags" aria-label="Company specialties">
-          <span>Columbia College Chicago</span>
           <span>BFA, Graphic Design</span>
+          <span>Interactive Arts & Media</span>
+          <span>Design Thinking</span>
         </div>
         <br />
         <!-- Title and Logo Container -->
         <div class="card-header">
-          <h4 id="card-title">Architecture</h4>
+          <h4>Universidad Del Valle De México</h4>
           <img
             src="img/company_logos/valle.svg"
-            alt="Hyliion Logo"
+            alt="Universidad Del Valle De México Logo"
             class="company-logo"
           />
         </div>
@@ -150,14 +137,13 @@
         >
         <!-- Tags Container -->
         <div class="tags" aria-label="Company specialties">
-          <span>Del Valle De México</span>
           <span>BArch, Architecture</span>
           <span>Laureate International universities</span>
           <span>ANPADEH Accredited</span>
         </div>
-      </div>
+      </section>
 
-      <div class="card">
+      <section class="card">
         <h1>Skills</h1>
         <p>
           At the heart of my UX approach is a deep-rooted understanding of users
@@ -183,13 +169,13 @@
           user experiences that are both delightful and functional. Trust me to
           take your user experience to the next level.
         </p>
-      </div>
+      </section>
 
-      <div class="card">
+      <section class="card">
         <!-- Skills-->
         <!-- Title and Logo Container -->
         <div class="card-header">
-          <h4 id="card-title">Design</h4>
+          <h4>Design</h4>
         </div>
         <!-- Tags Container -->
         <div class="tags" aria-label="Company specialties">
@@ -211,7 +197,7 @@
         <br />
         <!-- Title and Logo Container -->
         <div class="card-header">
-          <h4 id="card-title">Programing & Frameworks</h4>
+          <h4>Programing & Frameworks</h4>
         </div>
         <!-- Tags Container -->
         <div class="tags" aria-label="Company specialties">
@@ -226,7 +212,7 @@
         <br />
         <!-- Title and Logo Container -->
         <div class="card-header">
-          <h4 id="card-title">Software</h4>
+          <h4>Software</h4>
         </div>
         <!-- Tags Container -->
         <div class="tags" aria-label="Company specialties">
@@ -241,13 +227,23 @@
           <span>VS Code</span>
           <span>Github</span>
         </div>
-      </div>
-      <div class="footer">
-        <p class="made-with">
-          Made with &hearts; By Johann Flores in Austin, TX.
-        </p>
+      </section>
+
+      <footer class="footer">
+        <p class="made-with">Made with &hearts; By Johann Flores</p>
         <p class="copyright">Copyright © 2023</p>
-      </div>
-    </div>
+      </footer>
+    </main>
+    <script>
+      Sharect.config({
+        facebook: true,
+        twitter: true,
+        twitterUsername: "urbanfunkgod",
+        backgroundColor: "#34495e",
+        iconColor: "#FFF",
+        selectableElements: ["p"],
+      }).init();
+      Sharect.init();
+    </script>
   </body>
 </html>
